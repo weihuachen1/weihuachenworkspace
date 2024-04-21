@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>适宜种植植物查询</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function calculate() {
+            var latitude = parseFloat(document.getElementById("latitude").value);
+            var year = parseInt(document.getElementById("year").value);
+            var resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = "";
+
+            if (latitude >= 31.6552528 && latitude < 34.3596625) {
+                switch (year) {
+                    case 2024:
+                        resultDiv.innerHTML += "朴树 - 角度: 4.59239 度<br>毛白杨 - 角度: 5.32173 度<br>红豆杉 - 角度: 5.36964 度<br>水杉 - 角度: 5.36964 度<br>毛冷杉 - 角度: 5.36964 度<br>";
+                        break;
+                    case 2025:
+                        resultDiv.innerHTML += "朴树 - 角度: 4.23011 度<br>毛白杨 - 角度: 4.9608 度<br>红豆杉 - 角度: 5.00975 度<br>水杉 - 角度: 5.00975 度<br>毛冷杉 - 角度: 5.00975 度<br>";
+                        break;
+                    case 2026:
+                        resultDiv.innerHTML += "朴树 - 角度: 3.99807 度<br>毛白杨 - 角度: 4.72844 度<br>红豆杉 - 角度: 4.77744 度<br>水杉 - 角度: 4.77744 度<br>毛冷杉 - 角度: 4.77744 度<br>";
+                        break;
+                    case 2027:
+                        resultDiv.innerHTML += "朴树 - 角度: 3.86464 度<br>毛白杨 - 角度: 4.59329 度<br>红豆杉 - 角度: 4.540104 度<br>水杉 - 角度: 1.32726 度<br>毛冷杉 - 角度: 1.32726 度<br>";
+                        break;
+                    case 2028:
+                        resultDiv.innerHTML += "朴树 - 角度: 3.805 度<br>毛白杨 - 角度: 4.53086 度<br>毛冷杉 - 角度: 4.57773 度<br>红豆杉 - 角度: 4.57773 度<br>水杉 - 角度: 4.57773 度<br>";
+                        break;
+                    case 2029:
+                        resultDiv.innerHTML += "朴树 - 角度: 3.7991 度<br>高山杜鹃 - 角度: 4.51861 度<br>毛白杨 - 角度: 4.52145 度<br>红豆杉 - 角度: 4.5666 度<br>水杉 - 角度: 4.5666 度<br>";
+                        break;
+                    case 2030:
+                        resultDiv.innerHTML += "朴树 - 角度: 3.83028 度<br>高山杜鹃 - 角度: 4.38086 度<br>厚壳桂 - 角度: 4.49638 度<br>毛竹 - 角度: 4.49638 度<br>毛白杨 - 角度: 4.54876 度<br>";
+                        break;
+                    case 2031:
+                        resultDiv.innerHTML += "朴树 - 角度: 3.88448 度<br>高山杜鹃 - 角度: 4.31291 度<br>厚壳桂 - 角度: 4.43034 度<br>毛竹 - 角度: 4.43034 度<br>桑树 - 角度: 4.49167 度<br>";
+                        break;
+                    case 2032:
+                        resultDiv.innerHTML += "朴树 - 角度: 3.94963 度<br>高山杜鹃 - 角度: 4.25371 度<br>水杉 - 角度: 1.38714 度<br>毛冷杉 - 角度: 1.38714 度<br>红豆杉 - 角度: 1.38714 度<br>";
+                        break;
+                    case 2033:
+                        resultDiv.innerHTML += "朴树 - 角度: 3.96433 度<br>高山杜鹃 - 角度: 4.25371 度<br>水杉 - 角度: 1.38714 度<br>毛冷杉 - 角度: 1.38714 度<br>红豆杉 - 角度: 1.38714 度<br>";
+                        break;
+                    default:
+                        resultDiv.innerHTML += "非法年份，本系统只评定未来十年的适宜种植植物";
+                        break;
+                }
+            } else if (latitude >= 37.3135534 && latitude <= 39.6506857) {
+                switch (year) {
+                    case 2024:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.934846 度<br>毛白杨 - 角度: 1.33325 度<br>红豆杉 - 角度: 1.46688 度<br>水杉 - 角度: 1.46688 度<br>毛冷杉 - 角度: 1.46688 度<br>";
+                        break;
+                    case 2025:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.863371 度<br>毛白杨 - 角度: 1.29618 度<br>毛冷杉 - 角度: 1.38714 度<br>红豆杉 - 角度: 1.38714 度<br>水杉 - 角度: 1.38714 度<br>";
+                        break;
+                    case 2026:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.774431 度<br>毛白杨 - 角度: 1.20095 度<br>毛冷杉 - 角度: 1.33255 度<br>红豆杉 - 角度: 1.33255 度<br>水杉 - 角度: 1.33255 度<br>";
+                        break;
+                    case 2027:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.684458 度<br>毛白杨 - 角度: 1.17513 度<br>毛冷杉 - 角度: 1.30309 度<br>红豆杉 - 角度: 1.30309 度<br>水杉 - 角度: 1.30309 度<br>";
+                        break;
+                    case 2028:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.610297 度<br>毛白杨 - 角度: 1.17452 度<br>毛冷杉 - 角度: 1.29723 度<br>红豆杉 - 角度: 1.29723 度<br>水杉 - 角度: 1.29723 度<br>";
+                        break;
+                    case 2029:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.562443 度<br>毛白杨 - 角度: 1.19192 度<br>毛冷杉 - 角度: 1.30863 度<br>红豆杉 - 角度: 1.30863 度<br>水杉 - 角度: 1.30863 度<br>";
+                        break;
+                    case 2030:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.64152 度<br>水杉 - 角度: 4.64152 度<br>毛冷杉 - 角度: 4.64152 度<br>";
+                        break;
+                    case 2031:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.7267 度<br>水杉 - 角度: 4.7267 度<br>毛冷杉 - 角度: 4.7267 度<br>";
+                        break;
+                    case 2032:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.81857 度<br>水杉 - 角度: 4.81857 度<br>毛冷杉 - 角度: 4.81857 度<br>";
+                        break;
+                    case 2033:
+                        resultDiv.innerHTML += "朴树 - 角度: 0.91768 度<br>水杉 - 角度: 4.91768 度<br>毛冷杉 - 角度: 4.91768 度<br>";
+                        break;
+                    default:
+                        resultDiv.innerHTML += "非法年份，本系统只评定未来十年的适宜种植植物";
+                        break;
+                }
+            } else if (latitude < 31.6552528 || latitude > 39.6506857) {
+                resultDiv.innerHTML += "请检查该地区是否位于陕西并重新输入";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>适宜种植植物查询</h1>
+    <label for="latitude">请输入纬度（北纬）：</label>
+    <input type="text" id="latitude" placeholder="纬度（北纬）">
+    <label for="year">请输入年份：</label>
+    <input type="text" id="year" placeholder="年份">
+    <button onclick="calculate()">查询</button>
+    <div id="result"></div>
+</body>
+</html>
